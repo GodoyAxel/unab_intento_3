@@ -23,18 +23,3 @@ class Linea:
     def impresion(self):
         return f"Linea: {self.punto_a.impresion()} -> {self.punto_b.impresion()}"
     
-from punto import Punto
-p1 = Punto(1, 2)
-p2 = Punto(4, 6)
-
-linea = Linea(p1, p2)
-
-print(linea.impresion())
-
-linea.mueve_derecha(3)
-
-print(linea.impresion())
-
-linea.mueve_arriba(2)
-
-print(linea.impresion())
